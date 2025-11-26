@@ -11,9 +11,9 @@ export const generatePDF = (state: BudgetState, totals: any, orderNumber: string
     const doc = new jsPDF();
 
     // Colors
-    const PRIMARY_COLOR = [0, 0, 0]; // Black
-    const TEXT_COLOR = [31, 41, 55]; // Gray 800
-    const LIGHT_TEXT_COLOR = [107, 114, 128]; // Gray 500
+    const PRIMARY_COLOR = [0, 0, 0] as const; // Black
+    const TEXT_COLOR = [31, 41, 55] as const; // Gray 800
+    const LIGHT_TEXT_COLOR = [107, 114, 128] as const; // Gray 500
 
     // Header
     doc.setFontSize(10);
